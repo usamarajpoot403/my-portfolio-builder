@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 200;
+  src: url(larsseit-light-webfont.woff2) format('woff2'),
+       url(larsseit-light-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 500;
+  src: url(larsseit-medium-webfont.woff2) format('woff2'),
+       url(larsseit-medium-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 700;
+  src: url(larsseit-bold-webfont.woff2) format('woff2'),
+      url(larsseit-bold-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 800;
+  src: url(larsseit-extrabold-webfont.woff2) format('woff2'),
+       url(larsseit-extrabold-webfont.woff) format('woff');
+}
