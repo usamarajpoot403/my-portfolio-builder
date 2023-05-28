@@ -93,6 +93,93 @@ function Gallery() {
   );
 }
 
+function Clients() {
+  return (
+    <>
+      <section className="clients">
+        <ul>
+          <li>
+            <h5>Clients:</h5>
+          </li>
+          <li>
+            <img src="img/client-google.svg" />
+          </li>
+          <li>
+            <img src="img/client-volvo.svg" />
+          </li>
+          <li>
+            <img src="img/client-dove.svg" />
+          </li>
+          <li className="hide-tablet">
+            <img src="img/client-wimbledon.svg" />
+          </li>
+          <li className="hide-mobile">
+            <img src="img/client-lyst.svg" />
+          </li>
+        </ul>
+      </section>
+      <section className="remote">
+        <img
+          className="headphones"
+          src="img/headphones-1984px.png"
+          srcSet="
+			img/headphones-992px.png 992w,
+			img/headphones-1984px.png 1984w"
+          sizes="
+			(max-width: 1130px) 992px,
+			(max-width: 1440px) 1984px"
+        />
+        <div className="container-s">
+          <h2 className="remote-title">Working remotely, based in Karachi</h2>
+          <h5 className="remote-note">
+            <svg width={13} height={13} xmlns="http://www.w3.org/2000/svg">
+              <g fill="#6D6E6E" fillRule="nonzero">
+                <path d="M8.346 4.846a.5.5 0 01.638-.057l.07.057 3.5 3.5a.5.5 0 01.057.638l-.057.07-3.5 3.5a.5.5 0 01-.765-.638l.057-.07L11.493 8.7 8.346 5.554a.5.5 0 01-.057-.638l.057-.07z" />
+                <path d="M1 .5a.5.5 0 01.492.41L1.5 1v4.9a2.3 2.3 0 002.143 2.295L3.8 8.2h8.4a.5.5 0 01.09.992l-.09.008H3.8A3.3 3.3 0 01.505 6.087L.5 5.9V1A.5.5 0 011 .5z" />
+              </g>
+            </svg>{" "}
+            Previously <span>Austrlia</span>
+          </h5>
+          <h5 className="remote-text">
+            For the last few years, I’ve worked full-time remotely (mostly for
+            clients from the US, UK and the Aus). So far, so good. A unique
+            experience with lots of video calls, Slack messages and nice
+            clients.
+          </h5>
+        </div>
+        <div className="call">
+          <img className="call-portrait" src="img/karachi.jpg" />
+          <img src="img/calling-controls.svg" className="calling-controls" />
+          <div className="mia hide-mobile">
+            <img className="mia-portrait" src="img/mia.png" />
+            <h5 className="mia-title">
+              <svg width={16} height={16} xmlns="http://www.w3.org/2000/svg">
+                <g
+                  transform="translate(1 1)"
+                  stroke="#111515"
+                  fill="none"
+                  fillRule="evenodd"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="7.2" cy="7.2" r="7.2" />
+                  <path d="M4.32 8.64s1.08 1.44 2.88 1.44c1.8 0 2.88-1.44 2.88-1.44" />
+                  <path strokeWidth="1.6" d="M5.04 5.04h.007M9.36 5.04h.007" />
+                </g>
+              </svg>{" "}
+              Surprise!
+            </h5>
+            <h5 className="mia-text">
+              Hi I’m Mia! I love to appear on my dad’s video-calls. He always
+              tries to be professional with clients, but I love to surprise him.
+            </h5>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
 function Builder() {
   const [elements, setElements] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
@@ -220,11 +307,11 @@ function Builder() {
           <ul className="elements-list">
             <li
               className="draggable"
-              data-type="gallery"
+              data-type="clients"
               draggable="true"
-              onDragStart={(e) => handleDragStart(e, "gallery")}
+              onDragStart={(e) => handleDragStart(e, "clients")}
             >
-              Gallery
+              Clients
             </li>
             <li
               className="draggable"
@@ -259,6 +346,10 @@ function Builder() {
                 case "gallery":
                   ElementComponent = Gallery;
                   break;
+
+                case "clients":
+                  ElementComponent = Clients;
+                  break;
                 // Add more cases for other element types
 
                 default:
@@ -272,9 +363,7 @@ function Builder() {
                     <button
                       onClick={() => handleDelete(index)}
                       className="delete-btn"
-                    >
-                      Delete
-                    </button>
+                    ></button>
                   </div>
                 );
               }

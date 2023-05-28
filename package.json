@@ -1,7 +1,7 @@
 {
   "name": "my-react-app",
   "version": "0.1.0",
-  "homepage": "http://usamarajpoot403.github.io/my-portfolio-builder",
+  "homepage": "https://my-portfolio-builder.vercel.app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
