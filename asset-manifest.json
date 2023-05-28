@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-builder/static/css/main.4bcee4f6.css",
+    "main.js": "/my-portfolio-builder/static/js/main.ed885ff8.js",
+    "static/media/larsseit-light-webfont.woff": "/my-portfolio-builder/static/media/larsseit-light-webfont.7ab83cee79e3f5ec30eb.woff",
+    "static/media/larsseit-bold-webfont.woff": "/my-portfolio-builder/static/media/larsseit-bold-webfont.2d2e6da3594230fef107.woff",
+    "static/media/larsseit-medium-webfont.woff": "/my-portfolio-builder/static/media/larsseit-medium-webfont.3c7f7706e4de0eb081b7.woff",
+    "static/media/larsseit-extrabold-webfont.woff": "/my-portfolio-builder/static/media/larsseit-extrabold-webfont.e23342bc11eb622c0e7b.woff",
+    "static/media/larsseit-light-webfont.woff2": "/my-portfolio-builder/static/media/larsseit-light-webfont.c519be626aa2f1394931.woff2",
+    "static/media/larsseit-medium-webfont.woff2": "/my-portfolio-builder/static/media/larsseit-medium-webfont.fe2b1a234e487806c7fa.woff2",
+    "static/media/larsseit-bold-webfont.woff2": "/my-portfolio-builder/static/media/larsseit-bold-webfont.3cc77cdf1db8c19be8ca.woff2",
+    "static/media/larsseit-extrabold-webfont.woff2": "/my-portfolio-builder/static/media/larsseit-extrabold-webfont.88858f22467d573dcff8.woff2",
+    "index.html": "/my-portfolio-builder/index.html",
+    "static/media/plus.svg": "/my-portfolio-builder/static/media/plus.4dc52d21c6ad023c47e6.svg",
+    "static/media/minus.svg": "/my-portfolio-builder/static/media/minus.535aa81e76f2ca665d15.svg",
+    "main.4bcee4f6.css.map": "/my-portfolio-builder/static/css/main.4bcee4f6.css.map",
+    "main.ed885ff8.js.map": "/my-portfolio-builder/static/js/main.ed885ff8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bcee4f6.css",
+    "static/js/main.ed885ff8.js"
+  ]
+}
